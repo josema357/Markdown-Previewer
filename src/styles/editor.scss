@@ -1,0 +1,50 @@
+@use 'vars';
+
+.container-editor{
+    width: 50%;
+    min-height: 250px;
+}
+.bar-editor{
+    background-color: vars.$blue-600;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid vars.$black;
+}
+.right-bar{
+    display: flex;
+    color: vars.$white;
+    gap: 8px;
+}
+.left-image{
+    cursor: pointer;
+}
+#editor{
+    width: 100%;
+    height: calc(100% - 40px);
+    resize: none;
+    border-radius: 12px;
+    outline: none;
+    padding: 5px;
+    border: 1px solid vars.$black;
+}
+@media (max-width: 1000px){
+    .container-editor{
+        width: 70%;
+    }
+    #editor{
+        min-height: 250px;
+    }
+}
+@media (max-width: 800px){
+    .container-editor{
+        width: 80%;
+    }
+}
+@media (max-width: 650px){
+    .container-editor{
+        width: 100%;
+    }
+}

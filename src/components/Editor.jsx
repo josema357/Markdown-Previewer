@@ -2,16 +2,17 @@ import React from 'react'
 import Icono from '/markdownOriginal.svg'
 import fullScreen from '/fullscreen.svg'
 import { setText } from '../reducer/textSlice'
+import '../styles/editor.scss'
 
 const Editor = (props) => {
   return (
-    <div>
-        <div>
-          <div>
+    <div className='container-editor'>
+        <div className='bar-editor'>
+          <div className='right-bar'>
             <img src={Icono} alt="" />
             <span>Editor</span>
           </div>
-          <div><img src={fullScreen} alt="" /></div>
+          <div><img className="left-image" src={fullScreen} alt="" /></div>
         </div>
         <textarea onChange={
           (event)=>{

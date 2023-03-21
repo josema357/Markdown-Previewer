@@ -1,0 +1,25 @@
+@use 'vars';
+
+.container-description{
+    color: vars.$white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+}
+.description-main{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+.description-format{
+    font-size: 20px;
+}
+@media (max-width: 450px){
+    .description-main{
+        font-size: 20;
+    }
+    .description-format{
+        font-size: 16px;
+    }
+}
