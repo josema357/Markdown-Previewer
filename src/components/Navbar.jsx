@@ -6,16 +6,16 @@ import '../styles/navbar.scss'
 
 const Navbar = () => {
   return (
-      <div className='container-navbar'>
-          <div>
+      <nav className='container-navbar'>
+          <div className='container-title'>
               <span><img src={Markdown} alt="logo" /></span>
               <div >Markdown Previewer</div>
           </div>
-          <div >
-              <span><a href=""><img src={Linkedin} alt="linkedin" /></a></span>
-              <span ><a href=""><img src={Github} alt="github" /></a></span>
+          <div className='container-links'>
+              <span><a href="https://linkedin.com/in/josema317" target="_blank"><img src={Linkedin} alt="linkedin" /></a></span>
+              <span ><a href="https://github.com/josema357" target="_blank"><img src={Github} alt="github" /></a></span>
           </div>
-      </div>
+      </nav>
   )
 }
 

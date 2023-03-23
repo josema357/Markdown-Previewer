@@ -8,11 +8,11 @@ const Editor = (props) => {
   return (
     <div className='container-editor'>
         <div className='bar-editor'>
-          <div className='right-bar'>
+          <div className='left-bar'>
             <img src={Icono} alt="" />
             <span>Editor</span>
           </div>
-          <div><img className="left-image" src={fullScreen} alt="" /></div>
+          <div><img className="right-image" src={fullScreen} alt="" /></div>
         </div>
         <textarea onChange={
           (event)=>{
@@ -20,7 +20,7 @@ const Editor = (props) => {
               text: event.target.value
             }))
           }
-        }  id="editor" value={props.textDefault}></textarea>
+        }  id="editor" className='scroll' value={props.textDefault}></textarea>
     </div>
   )
 }

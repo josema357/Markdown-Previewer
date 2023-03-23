@@ -1,10 +1,10 @@
 @use 'vars';
 
-.container-editor{
+.container-previewer{
     width: 50%;
     min-height: 250px;
 }
-.bar-editor{
+.bar-previewer{
     background-color: vars.$blue-600;
     display: flex; 
     align-items: center;
@@ -14,40 +14,14 @@
     border-top-left-radius: 12px;
     border: 1px solid vars.$black;
 }
-.left-bar{
-    display: flex;
-    color: vars.$white;
-    gap: 8px;
-}
-.right-image{
-    cursor: pointer;
-}
-#editor{
-    width: 100%;
+#preview{
     height: calc(100% - 38px);
-    resize: none;
+    background-color: vars.$white;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     outline: none;
     padding: 5px;
     border: 1px solid vars.$black;
+    overflow: scroll;
     box-sizing: border-box;
-}
-@media (max-width: 1000px){
-    .container-editor{
-        width: 70%;
-    }
-    #editor{
-        min-height: 250px;
-    }
-}
-@media (max-width: 800px){
-    .container-editor{
-        width: 80%;
-    }
-}
-@media (max-width: 650px){
-    .container-editor{
-        width: 100%;
-    }
 }
