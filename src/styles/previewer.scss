@@ -2,7 +2,6 @@
 
 .container-previewer{
     width: 50%;
-    min-height: 250px;
 }
 .bar-previewer{
     background-color: vars.$blue-600;
@@ -20,8 +19,20 @@
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     outline: none;
-    padding: 5px;
+    padding:  0 5px;
     border: 1px solid vars.$black;
-    overflow: scroll;
+    overflow: auto;
     box-sizing: border-box;
+    background-color: rgb(234, 234, 231);
+}
+#preview img{
+    width: 100%;
+}
+@media (max-width:1000px){
+    .container-previewer{
+        width: 100%;
+    }
+    #preview{
+        min-height: 200px;
+    }
 }

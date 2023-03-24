@@ -15,7 +15,7 @@
     align-items: center;
     gap: 10px;
 }
-.container-title span{
+.container-title span , .container-links span{
     width: 20px;
     height: 20px;
 }
@@ -23,4 +23,16 @@
     display: flex;
     align-items: center;
     gap: 15px;
+}
+@media (max-width:400px){
+    .container-title div{
+        display: none;
+    }
+    .container-title span img, .container-title span{
+        width: 25px;
+        height: 25px;
+    }
+    .container-navbar{
+        padding: 18px 10px
+    }
 }
