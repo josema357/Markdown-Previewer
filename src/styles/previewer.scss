@@ -1,7 +1,8 @@
 @use 'vars';
 
 .container-previewer{
-    width: 50%;
+    width: 100%;
+    display: block;
 }
 .bar-previewer{
     background-color: vars.$blue-600;

@@ -1,8 +1,9 @@
 @use 'vars';
 
 .container-editor{
-    width: 50%;
+    width: 100%;
     min-height: 250px;
+    display: block;
 }
 .bar-editor{
     background-color: vars.$blue-600;
@@ -24,7 +25,6 @@
 }
 #editor{
     width: 100%;
-    height: calc(100% - 38px);
     resize: none;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
