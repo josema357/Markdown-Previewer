@@ -1,7 +1,7 @@
 import React from 'react';
-import Linkedin from '/linkedin.svg';
-import Github from '/github.svg';
-import Markdown from '/markdownOriginal.svg';
+import Linkedin from '../assets/linkedin.svg';
+import Github from '../assets/github.svg';
+import Markdown from '../assets/markdownOriginal.svg';
 import '../styles/navbar.scss'
 
 const Navbar = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
-import Icono from '/markdownOriginal.svg'
-import fullScreen from '/fullscreen.svg'
+import Icono from '../assets/markdownOriginal.svg'
+import fullScreen from '../assets/fullscreen.svg'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import '../styles/previewer.scss'
